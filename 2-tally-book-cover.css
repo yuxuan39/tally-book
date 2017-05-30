@@ -1,0 +1,27 @@
+body{
+    background-color: #89ABE3
+}
+
+
+table{
+    background-color: #F2DDDE;
+    border-collapse: collapse;
+    border: 3px solid grey;
+}
+
+th, td{
+    border: 1px solid grey;
+    text-align: center;
+}
+
+tr>td{
+    width: 50px;
+}
+
+td+td{
+    width: 100px;  
+}
+
+.tfoot{
+    height: 60px;
+}
