@@ -2,10 +2,10 @@ body{
     background-color: #89ABE3
 }
 
-
 table{
     background-color: #F2DDDE;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     border: 3px solid grey;
 }
 
@@ -22,6 +22,8 @@ td+td{
     width: 100px;  
 }
 
-.tfoot{
-    height: 60px;
+tfoot tr{
+    height: 40px;
 }
+
+
