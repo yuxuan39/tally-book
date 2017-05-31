@@ -1,5 +1,6 @@
 body{
-    background-color: #89ABE3
+    background-color: #89ABE3;
+    margin: 0;
 }
 
 table{
@@ -7,6 +8,8 @@ table{
     border-collapse: separate;
     border-spacing: 0;
     border: 3px solid grey;
+    margin: 0 0 25px 0;
+    
 }
 
 th, td{
@@ -24,6 +27,35 @@ td+td{
 
 tfoot tr{
     height: 40px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    background-color: #3244ae;
+    display: flex;
+    flex-direction: row;
+}
+
+ul>li>a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer{
+    font-size: 14px;
+    color: gray;
+    display: flex;
+}
+
+#tally-book{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
 
 
