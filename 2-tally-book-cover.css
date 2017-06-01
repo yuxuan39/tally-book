@@ -1,6 +1,64 @@
+
+nav>ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    height: 40px;
+    background-color: #3244ae;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.child-navi{
+    list-style-type: none;
+    display: block;
+    padding: 0;
+    width: 60px;
+    background-color: #eca1a2;
+    position: absolute;
+    visibility: hidden;   
+}
+
+.child-navi a{
+    padding: 0;
+    text-align: center;
+}
+
+.child-navi li{
+    padding: 8px 0 8px 0;
+}
+
+li+li:hover .child-navi{
+    visibility: visible;
+}
+
+.child-navi li:hover{
+    background-color: #1ab7a0;
+}
+
+ul>li>a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
 body{
     background-color: #89ABE3;
     margin: 0;
+}
+
+#tally-book{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
 
 table{
@@ -9,7 +67,6 @@ table{
     border-spacing: 0;
     border: 3px solid grey;
     margin: 0 0 25px 0;
-    
 }
 
 th, td{
@@ -29,33 +86,12 @@ tfoot tr{
     height: 40px;
 }
 
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0 0 25px 0;
-    background-color: #3244ae;
-    display: flex;
-    flex-direction: row;
-}
-
-ul>li>a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
 
 footer{
     font-size: 14px;
     color: gray;
     display: flex;
-}
-
-#tally-book{
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    
 }
 
 
