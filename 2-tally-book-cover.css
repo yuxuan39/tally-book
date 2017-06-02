@@ -1,5 +1,6 @@
+*{box-sizing: border-box;}
 
-nav>ul{
+nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 0 0 25px 0;
@@ -9,57 +10,62 @@ nav>ul{
     flex-direction: row;
 }
 
+nav>uL>li>a {
+    height: 40px;
+}
+
 nav a {
     text-decoration: none;
 }
 
-.child-navi{
+.child-nav {
     list-style-type: none;
     display: block;
     padding: 0;
     width: 60px;
-    background-color: #eca1a2;
-    position: absolute;
+    background-color: #3244ae;
+    position: relative;
+    z-index: 1;
     visibility: hidden;   
 }
 
-.child-navi a{
+.child-nav a {
     padding: 0;
     text-align: center;
 }
 
-.child-navi li{
+.child-nav li {
     padding: 8px 0 8px 0;
 }
 
-li+li:hover .child-navi{
+li+li:hover .child-nav {
     visibility: visible;
 }
 
-.child-navi li:hover{
-    background-color: #1ab7a0;
+.child-nav li:hover {
+    background-color: #eca1a2;
 }
 
-ul>li>a{
+ul>li>a {
     display: block;
     color: white;
     text-align: center;
     padding: 10px;
 }
 
-body{
+body {
     background-color: #89ABE3;
     margin: 0;
 }
 
-#tally-book{
+#tally-book {
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
     align-items: center;
 }
 
-table{
+table {
     background-color: #F2DDDE;
     border-collapse: separate;
     border-spacing: 0;
@@ -67,28 +73,26 @@ table{
     margin: 0 0 25px 0;
 }
 
-th, td{
+th, td {
     border: 1px solid grey;
     text-align: center;
 }
 
-tr>td{
+tr>td {
     width: 50px;
 }
 
-td+td{
+td+td {
     width: 100px;  
 }
 
-tfoot tr{
+tfoot tr {
     height: 40px;
 }
 
-footer{
+footer {
     font-size: 14px;
     color: gray;
     display: flex;
     justify-content: center;
 }
-
-
