@@ -10,8 +10,8 @@ nav>ul {
     flex-direction: row;
 }
 
-nav>uL>li>a {
-    height: 40px;
+nav>ul>li>a {
+    height: 100%;
 }
 
 nav a {
@@ -20,7 +20,6 @@ nav a {
 
 .child-nav {
     list-style-type: none;
-    display: block;
     padding: 0;
     width: 60px;
     background-color: #3244ae;
@@ -96,3 +95,17 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 700px){
+    nav>ul>li:not(:first-child):not(:nth-child(2)){display: none;}
+    .hamburger { content:url(https://www.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png);}
+    .hamburger { width: 35px;
+                 height: 35px;
+                 padding: 3px 0 0 5px;}
+    
+
+
+}
+
+
+
